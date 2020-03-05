@@ -1,6 +1,6 @@
 def nyc_pigeon_organizer(data)
 
-  new ={}
+  new = {}
   data.each do |key, value|
     value.each do |new_value, names|
       names.each do |name|
@@ -13,7 +13,7 @@ def nyc_pigeon_organizer(data)
           new[name][key] = []
         end
         
-        new[name][key] << new_val.to_s
+        new[name][key] << new_value.to_s
    end
   end
 end
